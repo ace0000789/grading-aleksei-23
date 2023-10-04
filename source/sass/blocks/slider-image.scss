@@ -142,6 +142,7 @@
 .slider-image__image {
   margin-bottom: 5px;
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     width: 476px;
     height: 476px;
   }
@@ -199,7 +200,7 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 608px;
+    max-width: 606px;
     font-size: 20px;
     line-height: 32px;
   }
@@ -257,6 +258,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
