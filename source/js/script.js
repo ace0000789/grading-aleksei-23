@@ -154,4 +154,3 @@ paginationItems.forEach((item, index) => {
     updateActiveSlide();
   });
 })
-
