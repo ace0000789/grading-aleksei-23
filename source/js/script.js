@@ -122,13 +122,11 @@ let activePaginationIndex = 0;
 nextButton.addEventListener('click', () => {
   updateActiveSlide();
   slideIndex = (slideIndex + 1) % slides.length;
-  slide();
 });
 
 prevButton.addEventListener('click', () => {
   updateActiveSlide();
   slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  slide();
 });
 
 
@@ -143,8 +141,6 @@ const updateActiveSlide = () => {
   const prevIndex = activePaginationIndex;
 
   activePaginationIndex = slideIndex;
-  console.log(activePaginationIndex);
-  console.log(slideIndex);
 
   paginationItems[prevIndex].classList.remove('slider-image__pagination-item--active');
   paginationItems[activePaginationIndex].classList.add('slider-image__pagination-item--active');
@@ -154,21 +150,7 @@ paginationItems.forEach((item, index) => {
   item.addEventListener('click', () => {
     activePaginationIndex = index;
     slideIndex = index;
-
-    /*slide();*/
     updateActiveSlide();
-
   });
-
 })
-/*
-const slide = () => {
-  slider.style.transform = `translateX(-${slideIndex * imageWidth})`;
-}
-
-window.addEventListener('load', () => {
-  slide();
-  updateActiveSlide();
-});
-*/
 
