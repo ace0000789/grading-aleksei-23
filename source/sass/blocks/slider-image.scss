@@ -140,6 +140,7 @@
 }
 
 .slider-image__image {
+  margin-bottom: 5px;
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
@@ -215,6 +216,13 @@
   @media (min-width: $desktop-width) {
     align-self: flex-start;
   }
+}
+
+.slider-image__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
 }
 
 .slider-image__old-price {
