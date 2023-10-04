@@ -38,6 +38,8 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
+
   }
 }
 
@@ -68,14 +70,38 @@
 
   &--decaf {
     background-color: #f3ebe1;
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      background-image: linear-gradient(
+        to bottom,
+        #f3ebe1 640px,
+        transparent 50% 100%
+      );
+    }
   }
 
   &--lavender {
     background-color: #eae6fc;
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      background-image: linear-gradient(
+        to bottom,
+        #eae6fc 640px,
+        transparent 50% 100%
+      );
+    }
   }
 
   &--triple {
     background-color: #e5e6e8;
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      background-image: linear-gradient(
+        to bottom,
+        #e5e6e8 640px,
+        transparent 50% 100%
+      );
+    }
   }
 }
 
