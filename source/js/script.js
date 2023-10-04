@@ -17,6 +17,9 @@ const nextButton = document.querySelector('.slider-image__next-button');
 const slides = Array.from(slider.querySelectorAll('.slider-image__item'));
 const slideCount = slides.length;
 let slideIndex = 0;
+const paginationList = document.querySelector('.slider-image__pagination-list');
+const paginationItems = document.querySelectorAll('.slider-image__pagination-item');
+let activePaginationIndex = 0;
 
 /** Map*/
 
@@ -36,6 +39,7 @@ var marker = L.marker([59.968299174485075,30.31739014040852], {icon: markerIcon}
 
 /** Menu mobile*/
 
+
 mainHeader.classList.remove('main-header--nojs');
 
 headerToggle.addEventListener('click', function () {
@@ -50,11 +54,15 @@ headerToggle.addEventListener('click', function () {
 
 /** Slider*/
 
-document.addEventListener("DOMContentLoaded", () => {
+setInitialSlide();
 
+function setInitialSlide() {
+  slides[0].classList.add('slider-image__item--active');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   rangeInput[0].value = 0;
   rangeInput[1].value = 1000;
-
   updatePriceInput();
   updateProgress();
 });
@@ -91,7 +99,6 @@ rangeInput.forEach((input, index) => {
 function updateProgress() {
   let minVal = parseInt(rangeInput[0].value),
     maxVal = parseInt(rangeInput[1].value);
-
   progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
   progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
 }
@@ -99,7 +106,6 @@ function updateProgress() {
 function updatePriceInput() {
   let minVal = parseInt(rangeInput[0].value),
     maxVal = parseInt(rangeInput[1].value);
-
   priceInput[0].value = minVal;
   priceInput[1].value = maxVal;
 }
@@ -114,10 +120,6 @@ if (sliderWrapper.classList.contains('slider__wrapper--disabled')) {
 
 /** Swiper */
 
-const paginationList = document.querySelector('.slider-image__pagination-list');
-const paginationItems = document.querySelectorAll('.slider-image__pagination-item');
-let activePaginationIndex = 0;
-
 
 nextButton.addEventListener('click', () => {
   updateActiveSlide();
@@ -129,7 +131,6 @@ prevButton.addEventListener('click', () => {
   slideIndex = (slideIndex - 1 + slides.length) % slides.length;
 });
 
-
 const updateActiveSlide = () => {
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
@@ -139,16 +140,16 @@ const updateActiveSlide = () => {
     }
   });
   const prevIndex = activePaginationIndex;
-
   activePaginationIndex = slideIndex;
-
   paginationItems[prevIndex].classList.remove('slider-image__pagination-item--active');
   paginationItems[activePaginationIndex].classList.add('slider-image__pagination-item--active');
 };
 
 paginationItems.forEach((item, index) => {
   item.addEventListener('click', () => {
+    paginationItems[activePaginationIndex].classList.remove('slider-image__pagination-item--active');
     activePaginationIndex = index;
+    item.classList.add('slider-image__pagination-item--active');
     slideIndex = index;
     updateActiveSlide();
   });
