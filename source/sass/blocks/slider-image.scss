@@ -41,6 +41,12 @@
     height: 640px;
     top: 320px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 100%;
+    top: 50%;
+  }
 }
 
 .slider-image__prev-button {
@@ -66,6 +72,13 @@
   &--active {
     display: flex;
     flex-shrink: 0;
+
+    @media (min-width: $desktop-width) {
+      padding: 30px 0 84px;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 30px;
+    }
   }
 
   &--decaf {
@@ -79,6 +92,11 @@
           #f3ebe1 640px,
           transparent 50% 100%
         );
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: #f3ebe1;
+      background-image: none;
     }
   }
 
@@ -94,6 +112,11 @@
           transparent 50% 100%
         );
     }
+
+    @media (min-width: $desktop-width) {
+      background-color: #eae6fc;
+      background-image: none;
+    }
   }
 
   &--triple {
@@ -107,6 +130,11 @@
           #e5e6e8 640px,
           transparent 50% 100%
         );
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: #e5e6e8;
+      background-image: none;
     }
   }
 }
@@ -152,6 +180,10 @@
     letter-spacing: 1.12px;
     padding-bottom: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+  }
 }
 
 .slider-image__description {
@@ -179,6 +211,10 @@
   width: 230px;
   align-self: center;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    align-self:flex-start;
+  }
 }
 
 .slider-image__old-price {
@@ -211,9 +247,12 @@
   text-align: center;
   justify-content: center;
 
-
   @media (min-width: $tablet-width) {
     order: -1;
+  }
+  @media (min-width: $desktop-width) {
+    order: 0;
+    text-align: left;
   }
 }
 
