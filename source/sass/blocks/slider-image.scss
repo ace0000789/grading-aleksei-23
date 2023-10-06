@@ -151,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-left: 5px;
+    padding-left: 25px;
     width: 600px;
     height: 600px;
   }
@@ -216,6 +216,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
+    max-width: 625px;
   }
 }
 
