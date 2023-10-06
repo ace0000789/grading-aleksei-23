@@ -74,10 +74,11 @@
     flex-shrink: 0;
 
     @media (min-width: $desktop-width) {
-      padding: 30px 0 84px;
+      padding: 30px 0 81px;
       flex-direction: row;
       justify-content: center;
       column-gap: 30px;
+      align-items: flex-start;
     }
   }
 
@@ -150,6 +151,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-left: 5px;
     width: 600px;
     height: 600px;
   }
@@ -211,6 +213,10 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .slider-image__price {
@@ -271,6 +277,7 @@
   @media (min-width: $desktop-width) {
     order: 0;
     text-align: left;
+    margin-top: 150px;
   }
 }
 
@@ -330,7 +337,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
-    bottom: 60px;
+    bottom: 64px;
     left: 50%;
     transform: translateX(-50%);
   }
