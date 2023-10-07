@@ -157,6 +157,8 @@
   background-size: 10px 6px;
   background-repeat: no-repeat;
   padding: 0 28px 0 0;
+
+  width: 152px;
 }
 
 .catalog__sort-select:hover {
@@ -206,6 +208,18 @@
   }
 }
 
+.catalog__product:hover {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.catalog__product:focus-within {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
 .catalog__link {
   margin-bottom: 4px;
   text-align: center;
@@ -218,6 +232,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     row-gap: 28px;
+  }
+}
+
+.catalog__link:focus {
+  @media (min-width: $desktop-width) {
+    outline: none;
   }
 }
 
