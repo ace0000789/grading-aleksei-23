@@ -19,8 +19,6 @@
 .nav-site__item {
   list-style-type: none;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-size: 12px;
   line-height: 16px;
   border-bottom: 1px solid #f0ebff;
@@ -28,7 +26,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 32px 20px 32px 22px;
+    padding: 0 20px 0 22px;
     font-family: "Monserrat", "Arial", sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -39,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 32px 18px 32px 23px;
+    padding: 0 18px 0 23px;
   }
 }
 
@@ -100,12 +98,17 @@
 }
 
 .nav-site__link {
+  display: block;
   text-decoration: none;
   color: #000000;
   letter-spacing: 0.54px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
     letter-spacing: 0.68px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

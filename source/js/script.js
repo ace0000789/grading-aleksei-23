@@ -46,7 +46,7 @@ function setInitialSlide() {
 
 document.addEventListener("DOMContentLoaded", () => {
   rangeInput[0].value = 0;
-  rangeInput[1].value = 1000;
+  rangeInput[1].value = 900;
   updatePriceInput();
   updateProgress();
 });
