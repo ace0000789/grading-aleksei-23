@@ -3,11 +3,10 @@
 let mainHeader = document.querySelector('.main-header');
 let headerToggle = document.querySelector('.main-header__toggle');
 
-const rangeInput = document.querySelectorAll(".slider__range input"),
-  priceInput = document.querySelectorAll(".slider__price-input input"),
-  progress = document.querySelector(".slider__progress");
+const rangeInput = document.querySelectorAll(".slider__range input");
+const priceInput = document.querySelectorAll(".slider__price-input input");
+const progress = document.querySelector(".slider__progress");
 let priceGap = 50;
-
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const sliderInputs = sliderWrapper.querySelectorAll('input');
 
