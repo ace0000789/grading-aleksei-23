@@ -10,14 +10,13 @@ let priceGap = 50;
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const sliderInputs = sliderWrapper.querySelectorAll('input');
 
-const slider = document.querySelector('.slider-image__list');
-const prevButton = document.querySelector('.slider-image__prev-button');
-const nextButton = document.querySelector('.slider-image__next-button');
-const slides = Array.from(slider.querySelectorAll('.slider-image__item'));
-const slideCount = slides.length;
+const sliderContainer = document.querySelector('.slider-image__container');
+const slides = sliderContainer.querySelectorAll('.slider-image__item');
+const nextButton = sliderContainer.querySelector('.slider-image__next-button');
+const prevButton = sliderContainer.querySelector('.slider-image__prev-button');
+const paginationContainer = sliderContainer.querySelector('.slider-image__pagination');
+const paginationItems = paginationContainer.querySelectorAll('.slider-image__pagination-item');
 let slideIndex = 0;
-const paginationList = document.querySelector('.slider-image__pagination-list');
-const paginationItems = document.querySelectorAll('.slider-image__pagination-item');
 let activePaginationIndex = 0;
 
 /** Menu mobile*/
@@ -104,36 +103,43 @@ if (sliderWrapper.classList.contains('slider__wrapper--disabled')) {
 /** Swiper */
 
 
+function updateSlide() {
+  slides.forEach((slide, index) => {
+    slide.classList.remove('slider-image__item--active');
+    if(index === slideIndex) {
+      slide.classList.add('slider-image__item--active');
+    }
+  });
+
+  paginationItems.forEach((item, index) => {
+    item.classList.remove('slider-image__pagination-item--active');
+    if(index === slideIndex) {
+      item.classList.add('slider-image__pagination-item--active');
+    }
+  });
+}
+
 nextButton.addEventListener('click', () => {
-  updateActiveSlide();
-  slideIndex = (slideIndex + 1) % slides.length;
+  slideIndex++;
+  if(slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  updateSlide();
 });
 
 prevButton.addEventListener('click', () => {
-  updateActiveSlide();
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  slideIndex--;
+  if(slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  }
+  updateSlide();
 });
-
-const updateActiveSlide = () => {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.classList.add('slider-image__item--active');
-    } else {
-      slide.classList.remove('slider-image__item--active');
-    }
-  });
-  const prevIndex = activePaginationIndex;
-  activePaginationIndex = slideIndex;
-  paginationItems[prevIndex].classList.remove('slider-image__pagination-item--active');
-  paginationItems[activePaginationIndex].classList.add('slider-image__pagination-item--active');
-};
 
 paginationItems.forEach((item, index) => {
   item.addEventListener('click', () => {
-    paginationItems[activePaginationIndex].classList.remove('slider-image__pagination-item--active');
-    activePaginationIndex = index;
-    item.classList.add('slider-image__pagination-item--active');
     slideIndex = index;
-    updateActiveSlide();
+    updateSlide();
   });
-})
+});
+
+updateSlide();
