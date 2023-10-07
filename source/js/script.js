@@ -21,22 +21,6 @@ const paginationList = document.querySelector('.slider-image__pagination-list');
 const paginationItems = document.querySelectorAll('.slider-image__pagination-item');
 let activePaginationIndex = 0;
 
-/** Map*/
-
-var myMap = L.map('mapid').setView([59.968299174485075,30.31739014040852], 19);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(myMap);
-
-var markerIcon = L.icon({
-    iconUrl: 'images/icons/stack.svg#map-icon',
-    iconSize: [38, 50],
-    iconAnchor: [30, 50]
-  });
-
-var marker = L.marker([59.968299174485075,30.31739014040852], {icon: markerIcon}).addTo(myMap);
-
 /** Menu mobile*/
 
 
