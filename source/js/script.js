@@ -21,7 +21,6 @@ let activePaginationIndex = 0;
 
 /** Menu mobile*/
 
-
 mainHeader.classList.remove('main-header--nojs');
 
 headerToggle.addEventListener('click', function () {
@@ -101,7 +100,6 @@ if (sliderWrapper.classList.contains('slider__wrapper--disabled')) {
 }
 
 /** Swiper */
-
 
 function updateSlide() {
   slides.forEach((slide, index) => {
