@@ -120,17 +120,15 @@ function updateSlide() {
 }
 
 nextButton.addEventListener('click', () => {
-  slideIndex++;
-  if(slideIndex >= slides.length) {
-    slideIndex = 0;
+  if(slideIndex < slides.length - 1) {
+    slideIndex++;
   }
   updateSlide();
 });
 
 prevButton.addEventListener('click', () => {
-  slideIndex--;
-  if(slideIndex < 0) {
-    slideIndex = slides.length - 1;
+  if(slideIndex > 0) {
+    slideIndex--;
   }
   updateSlide();
 });
