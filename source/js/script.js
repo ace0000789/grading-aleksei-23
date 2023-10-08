@@ -117,6 +117,17 @@ function updateSlide() {
       item.classList.add('slider-image__pagination-item--active');
     }
   });
+
+  if(slideIndex === 0) {
+    prevButton.disabled = true;
+    nextButton.disabled = false;
+  } else if(slideIndex === slides.length - 1) {
+    prevButton.disabled = false;
+    nextButton.disabled = true;
+  } else {
+    prevButton.disabled = false;
+    nextButton.disabled = false;
+  }
 }
 
 nextButton.addEventListener('click', () => {
