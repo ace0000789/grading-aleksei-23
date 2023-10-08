@@ -181,6 +181,15 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 2px solid #9070ec;
   background-color: #ffffff;
   position: relative;
+  transform: translateX(5px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(5px);
+  }
 }
 
 .slider__range-max::-webkit-slider-thumb:hover {
