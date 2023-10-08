@@ -115,7 +115,7 @@
   padding: 0;
   margin: 0 auto;
   display: flex;
-  column-gap: 13px;
+  column-gap: 3px;
   justify-content: space-between;
   margin-bottom: 16px;
   flex-wrap: wrap;
@@ -126,7 +126,7 @@
     margin: 0;
     padding-left: 0;
     margin-bottom: 27px;
-    column-gap: 23px;
+    column-gap: 13px;
   }
 }
 
@@ -156,9 +156,8 @@
   background-position: 95% 50%;
   background-size: 10px 6px;
   background-repeat: no-repeat;
-  padding: 0 28px 0 0;
-
-  width: 152px;
+  padding: 0 28px 0 10px;
+  width: 162px;
 }
 
 .catalog__sort-select:hover {
