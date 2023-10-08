@@ -86,9 +86,9 @@
                 images/slider-image/decaf-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="images/slider-image/decaf-mobile.webp 1x,
                 images/slider-image/decaf-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)"
+                <source type="image/png" media="(min-width: 1440px)"
                   srcset="images/slider-image/decaf-desktop.png 1x, images/slider-image/decaf-desktop@2x.png 2x">
-                <source media="(min-width: 769px)"
+                <source type="image/png" media="(min-width: 769px)"
                   srcset="images/slider-image/decaf-tablet.png 1x, images/slider-image/decaf-tablet@2x.png 2x">
                 <img class="slider-image__image" src="images/slider-image/decaf-mobile.png" width="280" height="280"
                   srcset="images/slider-image/decaf-mobile@2x.png 2x" alt="Промо Decaf Flat White">
@@ -97,7 +97,8 @@
             <div class="slider-image__info-wrapper">
               <span class="slider-image__new">новинка!</span>
               <h3 class="slider-image__title">Декаф Флэт Уайт</h3>
-              <p class="slider-image__description">Свежесваренный кофе без кофеина из Эфиопии c&nbsp;натуральным фермерским
+              <p class="slider-image__description">Свежесваренный кофе без кофеина из Эфиопии c&nbsp;натуральным
+                фермерским
                 молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
               <div class="slider-image__price">
                 <div class="slider-image__price-wrapper">
@@ -117,9 +118,9 @@
                 images/slider-image/lavender-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="images/slider-image/lavender-mobile.webp 1x,
                 images/slider-image/lavender-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)"
+                <source type="image/png" media="(min-width: 1440px)"
                   srcset="images/slider-image/lavender-desktop.png 1x, images/slider-image/lavender-desktop@2x.png 2x">
-                <source media="(min-width: 769px)"
+                <source type="image/png" media="(min-width: 769px)"
                   srcset="images/slider-image/lavender-tablet.png 1x, images/slider-image/lavender-tablet@2x.png 2x">
                 <img class="slider-image__image" src="images/slider-image/lavender-mobile.png" width="280" height="280"
                   srcset="images/slider-image/lavender-mobile@2x.png 2x" alt="Промо Lavender Latte">
@@ -128,7 +129,8 @@
             <div class="slider-image__info-wrapper">
               <span class="slider-image__new">новинка!</span>
               <h3 class="slider-image__title">Лавандовый Латте</h3>
-              <p class="slider-image__description">Невероятное сочетание перуанской высокогорной<br>арабики с молоком ламы
+              <p class="slider-image__description">Невероятное сочетание перуанской высокогорной<br>арабики с молоком
+                ламы
                 и лавандовым сиропом&nbsp;унесёт<br>вас прямо на вершину Радужных гор</p>
               <div class="slider-image__price">
                 <div class="slider-image__price-wrapper">
@@ -148,9 +150,9 @@
                 images/slider-image/triple-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="images/slider-image/triple-mobile.webp 1x,
                 images/slider-image/triple-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)"
+                <source type="image/png" media="(min-width: 1440px)"
                   srcset="images/slider-image/triple-desktop.png 1x, images/slider-image/triple-desktop@2x.png 2x">
-                <source media="(min-width: 769px)"
+                <source type="image/png" media="(min-width: 769px)"
                   srcset="images/slider-image/triple-tablet.png 1x, images/slider-image/triple-tablet@2x.png 2x">
                 <img class="slider-image__image" src="images/slider-image/triple-mobile.png" width="280" height="280"
                   srcset="images/slider-image/triple-mobile@2x.png 2x" alt="Промо Triple Espresso">
@@ -236,12 +238,12 @@
                   <div class="slider__progress"></div>
                 </div>
                 <div class="slider__range">
-                  <label class="visually-hidden" for="slider__range-min">Цена от</label>
-                  <input class="slider__range-min" type="range" min="0" max="1000" value="0" name="min-price" step="50"
-                    id="slider__range-min">
-                  <label class="visually-hidden" for="slider__range-max">Цена до</label>
+                  <label class="visually-hidden" for="slider-range-min">Цена от</label>
+                  <input class="slider__range-min" type="range" min="0" max="1000" value="0" name="min-price"
+                    step="50" id="slider-range-min">
+                  <label class="visually-hidden" for="slider-range-max">Цена до</label>
                   <input class="slider__range-max" type="range" min="0" max="1000" value="900" name="max-price"
-                    step="50" id="slider__range-max">
+                    step="50" id="slider-range-max">
                 </div>
               </div>
               <div class="slider__price-input">
@@ -488,7 +490,7 @@
             <div class="logo-bar__logo">
               <a class="logo-bar__logo-link" href="index.html">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./images/footer/footer-logo-tablet.svg">
+                  <source media="(min-width: 768px)" srcset="./images/footer/footer-logo-tablet.svg" type="image/svg+xml">
                   <img class="logo-bar__logo-image" loading="lazy" src="./images/footer/footer-logo-mobile.svg"
                     width="82" height="36" alt="Лого мазазина DrinkGo».">
                 </picture>
@@ -569,7 +571,8 @@
               <ul class="about-us__list about-us__list--contact">
                 <li class="about-us__item about-us__item--contact about-us__item--address">
                   <span class="visually-hidden">Наш адрес</span>
-                  <a class="about-us__link" href="https://maps.app.goo.gl/L6pSNcSo1RTTVWCF8">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+                  <a class="about-us__link" href="https://maps.app.goo.gl/L6pSNcSo1RTTVWCF8">Санкт-Петербург, набережная
+                    реки Карповки, дом 5</a>
                 </li>
                 <li class="about-us__item about-us__item--contact about-us__item--phone">
                   <span class="visually-hidden">Наш телефон</span>
