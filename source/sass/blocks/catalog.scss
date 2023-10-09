@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 20px 88px;
+    padding: 80px 20px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,7 +183,7 @@
     grid-template-columns: 349px 349px;
     gap: 30px;
     row-gap: 30px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
