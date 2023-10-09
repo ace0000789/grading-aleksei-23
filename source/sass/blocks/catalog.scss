@@ -117,7 +117,7 @@
   display: flex;
   column-gap: 3px;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   flex-wrap: wrap;
   padding-left: 2px;
 
@@ -174,7 +174,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  row-gap: 18px;
+  row-gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 
@@ -225,7 +225,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  row-gap: 23px;
+  row-gap: 21px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
