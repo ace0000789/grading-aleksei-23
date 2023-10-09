@@ -92,9 +92,10 @@
   background-color: #e2e2e2;
 }
 
-.form-checkbox__input:disabled.form-checkbox__name {
-  color: red;
+.form-checkbox__input:disabled + .form-checkbox__slider + .form-checkbox__name {
+  color: #bdbdbd;
 }
+
 
 .form-checkbox__input:disabled + .form-checkbox__slider::before {
   background-color: #f8f8f8;
