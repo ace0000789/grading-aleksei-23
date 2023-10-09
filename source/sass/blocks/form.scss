@@ -20,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 31px;
     margin-top: 2px;
   }
 }
@@ -60,6 +60,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 28px;
     }
   }
 }
