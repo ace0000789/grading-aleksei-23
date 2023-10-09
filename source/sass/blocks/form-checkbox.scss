@@ -38,7 +38,7 @@
 .form-checkbox__slider {
   position: absolute;
   cursor: pointer;
-  width: 40px;
+  width: 38px;
   height: 20px;
   left: 0;
   top: 0;
@@ -82,7 +82,7 @@
 }
 
 .form-checkbox__input:checked + .form-checkbox__slider::before {
-  transform: translateX(20px);
+  transform: translateX(18px);
 }
 
 /* Стили при disabled */
