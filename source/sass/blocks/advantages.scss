@@ -31,7 +31,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #7859cf;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   order: -1;
 }
 
@@ -64,7 +64,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 32px;
+  row-gap: 33px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -80,7 +80,7 @@
 .advantages__item {
   margin: 0;
   padding: 0;
-  margin-top: 66px;
+  margin-top: 65px;
   position: relative;
 
   @media (min-width: $tablet-width) {
