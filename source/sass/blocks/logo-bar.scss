@@ -61,6 +61,7 @@
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   min-width: 160px;
   gap: 20px;
