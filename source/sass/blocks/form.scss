@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 31px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -53,7 +53,7 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   &--price {
     margin-bottom: 29px;
