@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 30px 100px;
+    padding: 57px 30px 99px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -33,6 +33,10 @@
   color: #7859cf;
   margin-bottom: 5px;
   order: -1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
 }
 
 .advantages__title {
