@@ -74,7 +74,7 @@
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 42px;
+  row-gap: 44px;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
@@ -136,7 +136,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .catalog__sort-select {
