@@ -96,7 +96,7 @@
   }
 
   &--speed::before {
-    content: url("../../images/advantages/speed.svg");
+    content: url("../../images/icons/stack.svg#speed");
     position: absolute;
     top: -66px;
     left: 50%;
@@ -116,7 +116,7 @@
   }
 
   &--convenience::before {
-    content: url("../../images/advantages/convenience.svg");
+    content: url("../../images/icons/stack.svg#convenience");
     position: absolute;
     top: -66px;
     left: 50%;
@@ -136,7 +136,7 @@
   }
 
   &--cheer::before {
-    content: url("../../images/advantages/cheer.svg");
+    content: url("../../images/icons/stack.svg#cheer");
     position: absolute;
     top: -66px;
     left: 50%;
@@ -156,7 +156,7 @@
   }
 
   &--eco::before {
-    content: url("../../images/advantages/eco.svg");
+    content: url("../../images/icons/stack.svg#eco");
     position: absolute;
     top: -66px;
     left: 50%;
