@@ -9,6 +9,7 @@ const progress = document.querySelector(".slider__progress");
 let priceGap = 50;
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const sliderInputs = sliderWrapper.querySelectorAll('input');
+const resetButton = document.querySelector('.button--reset');
 
 const sliderContainer = document.querySelector('.slider-image__container');
 const slides = sliderContainer.querySelectorAll('.slider-image__item');
@@ -90,6 +91,13 @@ function updatePriceInput() {
   priceInput[0].value = minVal;
   priceInput[1].value = maxVal;
 }
+
+resetButton.addEventListener('click', () => {
+  rangeInput[0].value = 0;
+  rangeInput[1].value = 900;
+  updatePriceInput();
+  updateProgress();
+});
 
 // Для disabled slider (add: .slider__wrapper--disabled)
 
