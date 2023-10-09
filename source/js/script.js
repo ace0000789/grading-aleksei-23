@@ -107,7 +107,7 @@ if (sliderWrapper.classList.contains('slider__wrapper--disabled')) {
   });
 }
 
-/** Swiper */
+/** Slider-image */
 
 function updateSlide() {
   slides.forEach((slide, index) => {
