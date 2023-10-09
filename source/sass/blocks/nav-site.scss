@@ -66,7 +66,6 @@
 }
 
 .nav-site__item:hover {
-  opacity: 0.6;
 
   @media (min-width: $tablet-width) {
     color: #7859cf;
@@ -90,6 +89,7 @@
 .nav-site__item:active {
   background-color: #f0ebff;
   color: #333333;
+  opacity: 1;
 
   @media (min-width: $tablet-width) {
     opacity: 1;
