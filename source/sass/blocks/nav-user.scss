@@ -6,6 +6,7 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 1px;
 
   @media (min-width: $desktop-width) {
     gap: 20px;
@@ -80,7 +81,7 @@
 
 .nav-user__icon {
   position: absolute;
-  transform: translate(-50%, 138%);
+  transform: translate(-47%, 138%);
 
   @media (min-width: $tablet-width) {
     transform: translate(-50%, 190%);
