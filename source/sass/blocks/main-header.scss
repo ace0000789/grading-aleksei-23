@@ -24,16 +24,13 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #f0ebff;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
     padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: none;
     padding-right: 42px;
     padding-left: 20px;
     justify-content: space-between;
@@ -135,12 +132,14 @@
 .main-header--opened .nav-site {
   @media (max-width: 767px) {
     position: absolute;
-    top: 61px;
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: #ffffff;
     z-index: 1;
     transform: none;
+    border-top: 1px solid #f0ebff;
+    min-width: 320px;
   }
 }
 
