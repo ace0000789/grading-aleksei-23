@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 priceInput.forEach((input) => {
-  input.addEventListener('input', (e) => {
+  input.addEventListener('input', () => {
     const minVal = parseInt(priceInput[0].value, 10);
     const maxVal = parseInt(priceInput[1].value, 10);
     if ((maxVal - minVal >= priceGap) && maxVal <= 1000) {
@@ -80,8 +80,8 @@ rangeInput.forEach((input) => {
 function updateProgress() {
   const minVal = parseInt(rangeInput[0].value, 10);
   const maxVal = parseInt(rangeInput[1].value, 10);
-  progress.style.left = (minVal / rangeInput[0].max) * 100 + '%';
-  progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + '%';
+  progress.style.left = `${(minVal / rangeInput[0].max) * 100 }%`;
+  progress.style.right = `${100 - (maxVal / rangeInput[1].max) * 100 }%`;
 }
 
 function updatePriceInput() {
