@@ -100,13 +100,12 @@
   display: block;
   text-decoration: none;
   color: #000000;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.24px;
   padding-top: 20px;
   padding-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
-    letter-spacing: 0.68px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
