@@ -141,7 +141,8 @@
 }
 
 .slider-image__image {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  vertical-align: bottom;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
