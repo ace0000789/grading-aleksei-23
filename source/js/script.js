@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 priceInput.forEach((input) => {
   input.addEventListener('input', e => {
-    const minVal = parseInt(priceInput[0].value);
-    const maxVal = parseInt(priceInput[1].value);
+    const minVal = parseInt(priceInput[0].value, 10);
+    const maxVal = parseInt(priceInput[1].value, 10);
     if ((maxVal - minVal >= priceGap) && maxVal <= 1000) {
       rangeInput[0].value = minVal;
       rangeInput[1].value = maxVal;
@@ -62,8 +62,8 @@ priceInput.forEach((input) => {
 
 rangeInput.forEach((input, index) => {
   input.addEventListener('input', e => {
-    const minVal = parseInt(rangeInput[0].value);
-    const maxVal = parseInt(rangeInput[1].value);
+    const minVal = parseInt(rangeInput[0].value, 10);
+    const maxVal = parseInt(rangeInput[1].value, 10);
 
     if (maxVal - minVal < priceGap) {
       if (e.target.className === 'slider__range-min') {
@@ -78,15 +78,15 @@ rangeInput.forEach((input, index) => {
 });
 
 function updateProgress() {
-  const minVal = parseInt(rangeInput[0].value);
-  const maxVal = parseInt(rangeInput[1].value);
+  const minVal = parseInt(rangeInput[0].value, 10);
+  const maxVal = parseInt(rangeInput[1].value, 10);
   progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
   progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
 }
 
 function updatePriceInput() {
-  const minVal = parseInt(rangeInput[0].value);
-  const maxVal = parseInt(rangeInput[1].value);
+  const minVal = parseInt(rangeInput[0].value, 10);
+  const maxVal = parseInt(rangeInput[1].value, 10);
   priceInput[0].value = minVal;
   priceInput[1].value = maxVal;
 }
