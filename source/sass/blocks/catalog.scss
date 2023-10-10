@@ -3,7 +3,7 @@
 
 .catalog {
   margin: 0;
-  padding: 50px 20px 44px;
+  padding: 49px 20px 45px;
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
@@ -237,6 +237,16 @@
 .catalog__link:focus {
   @media (min-width: $desktop-width) {
     outline: none;
+  }
+}
+
+.catalog__img {
+  @media (min-width: $tablet-width) {
+    padding-right: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
