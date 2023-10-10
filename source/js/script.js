@@ -41,7 +41,7 @@ function setInitialSlide() {
   slides[0].classList.add('slider-image__item--active');
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   rangeInput[0].value = 0;
   rangeInput[1].value = 900;
   updatePriceInput();
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 priceInput.forEach((input) => {
-  input.addEventListener("input", e => {
+  input.addEventListener('input', e => {
     let minVal = parseInt(priceInput[0].value),
       maxVal = parseInt(priceInput[1].value);
     if ((maxVal - minVal >= priceGap) && maxVal <= 1000) {
@@ -61,12 +61,12 @@ priceInput.forEach((input) => {
 });
 
 rangeInput.forEach((input, index) => {
-  input.addEventListener("input", e => {
+  input.addEventListener('input', e => {
     let minVal = parseInt(rangeInput[0].value),
       maxVal = parseInt(rangeInput[1].value);
 
     if (maxVal - minVal < priceGap) {
-      if (e.target.className === "slider__range-min") {
+      if (e.target.className === 'slider__range-min') {
         rangeInput[0].value = maxVal - priceGap;
       } else {
         rangeInput[1].value = minVal + priceGap;
