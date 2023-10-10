@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 priceInput.forEach((input) => {
-  input.addEventListener('input', e => {
+  input.addEventListener('input', (e) => {
     const minVal = parseInt(priceInput[0].value, 10);
     const maxVal = parseInt(priceInput[1].value, 10);
     if ((maxVal - minVal >= priceGap) && maxVal <= 1000) {
@@ -60,8 +60,8 @@ priceInput.forEach((input) => {
   });
 });
 
-rangeInput.forEach((input, index) => {
-  input.addEventListener('input', e => {
+rangeInput.forEach((input) => {
+  input.addEventListener('input', (e) => {
     const minVal = parseInt(rangeInput[0].value, 10);
     const maxVal = parseInt(rangeInput[1].value, 10);
 
@@ -80,8 +80,8 @@ rangeInput.forEach((input, index) => {
 function updateProgress() {
   const minVal = parseInt(rangeInput[0].value, 10);
   const maxVal = parseInt(rangeInput[1].value, 10);
-  progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-  progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+  progress.style.left = (minVal / rangeInput[0].max) * 100 + '%';
+  progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + '%';
 }
 
 function updatePriceInput() {
@@ -101,7 +101,7 @@ resetButton.addEventListener('click', () => {
 // Для disabled slider (add: .slider__wrapper--disabled)
 
 if (sliderWrapper.classList.contains('slider__wrapper--disabled')) {
-  sliderInputs.forEach(input => {
+  sliderInputs.forEach((input) => {
     input.disabled = true;
   });
 }
