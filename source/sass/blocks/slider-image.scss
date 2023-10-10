@@ -334,26 +334,25 @@
   fill: #bdbdbd;
 }
 
-.slider-image__pagination {
+
+.slider-image__pagination-list {
   display: none;
 
   @media (min-width: $desktop-width) {
-    display: block;
     position: absolute;
     bottom: 63px;
     left: 50%;
     transform: translateX(-50%);
-  }
-}
 
-.slider-image__pagination-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 8px;
+  }
+
 }
 
 .slider-image__pagination-item {
