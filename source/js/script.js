@@ -1,12 +1,12 @@
 /* в этот файл добавляет скрипты*/
 
-let mainHeader = document.querySelector('.main-header');
-let headerToggle = document.querySelector('.main-header__toggle');
+const mainHeader = document.querySelector('.main-header');
+const headerToggle = document.querySelector('.main-header__toggle');
 
 const rangeInput = document.querySelectorAll(".slider__range input");
 const priceInput = document.querySelectorAll(".slider__price-input input");
 const progress = document.querySelector(".slider__progress");
-let priceGap = 50;
+const priceGap = 50;
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const sliderInputs = sliderWrapper.querySelectorAll('input');
 const resetButton = document.querySelector('.button--reset');
@@ -18,13 +18,12 @@ const prevButton = sliderContainer.querySelector('.slider-image__prev-button');
 const paginationContainer = sliderContainer.querySelector('.slider-image__pagination-list');
 const paginationItems = paginationContainer.querySelectorAll('.slider-image__pagination-item');
 let slideIndex = 0;
-let activePaginationIndex = 0;
 
 /** Menu mobile*/
 
 mainHeader.classList.remove('main-header--nojs');
 
-headerToggle.addEventListener('click', function () {
+headerToggle.addEventListener('click', () => {
   if (mainHeader.classList.contains('main-header--closed')) {
     mainHeader.classList.remove('main-header--closed');
     mainHeader.classList.add('main-header--opened');
