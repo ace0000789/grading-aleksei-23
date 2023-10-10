@@ -3,9 +3,9 @@
 const mainHeader = document.querySelector('.main-header');
 const headerToggle = document.querySelector('.main-header__toggle');
 
-const rangeInput = document.querySelectorAll(".slider__range input");
-const priceInput = document.querySelectorAll(".slider__price-input input");
-const progress = document.querySelector(".slider__progress");
+const rangeInput = document.querySelectorAll('.slider__range input');
+const priceInput = document.querySelectorAll('.slider__price-input input');
+const progress = document.querySelector('.slider__progress');
 const priceGap = 50;
 const sliderWrapper = document.querySelector('.slider__wrapper');
 const sliderInputs = sliderWrapper.querySelectorAll('input');
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 priceInput.forEach((input) => {
   input.addEventListener('input', e => {
-    let minVal = parseInt(priceInput[0].value),
-      maxVal = parseInt(priceInput[1].value);
+    const minVal = parseInt(priceInput[0].value);
+    const maxVal = parseInt(priceInput[1].value);
     if ((maxVal - minVal >= priceGap) && maxVal <= 1000) {
       rangeInput[0].value = minVal;
       rangeInput[1].value = maxVal;
@@ -62,8 +62,8 @@ priceInput.forEach((input) => {
 
 rangeInput.forEach((input, index) => {
   input.addEventListener('input', e => {
-    let minVal = parseInt(rangeInput[0].value),
-      maxVal = parseInt(rangeInput[1].value);
+    const minVal = parseInt(rangeInput[0].value);
+    const maxVal = parseInt(rangeInput[1].value);
 
     if (maxVal - minVal < priceGap) {
       if (e.target.className === 'slider__range-min') {
@@ -78,15 +78,15 @@ rangeInput.forEach((input, index) => {
 });
 
 function updateProgress() {
-  let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value);
+  const minVal = parseInt(rangeInput[0].value);
+  const maxVal = parseInt(rangeInput[1].value);
   progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
   progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
 }
 
 function updatePriceInput() {
-  let minVal = parseInt(rangeInput[0].value),
-    maxVal = parseInt(rangeInput[1].value);
+  const minVal = parseInt(rangeInput[0].value);
+  const maxVal = parseInt(rangeInput[1].value);
   priceInput[0].value = minVal;
   priceInput[1].value = maxVal;
 }
