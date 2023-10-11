@@ -16,7 +16,6 @@
 
 .logo-bar__logo-link {
   display: block;
-  height: auto;
 
   @media (min-width: $desktop-width) {
     width: 170px;
@@ -24,6 +23,8 @@
 }
 
 .logo-bar__logo-image {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 170px;
   }
@@ -38,7 +39,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px 19px;
+  padding: 0 20px 20px;
   max-width: 320px;
   margin: 0 auto;
 
@@ -111,4 +112,13 @@
 
 .logo-bar__social-link:active .logo-bar__social-image {
   fill: #7859cf;
+}
+
+.logo-bar__logo {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
