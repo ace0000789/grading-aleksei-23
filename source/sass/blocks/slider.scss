@@ -151,7 +151,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-min::-webkit-slider-thumb:hover {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
@@ -161,7 +161,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-min:focus::-webkit-slider-thumb {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
@@ -193,7 +193,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-max::-webkit-slider-thumb:hover {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
@@ -203,7 +203,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-max:focus::-webkit-slider-thumb {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
@@ -224,13 +224,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-min::-moz-range-thumb:hover {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
 
 .slider__range-min:focus::-moz-range-thumb {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
@@ -251,13 +251,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider__range-max::-moz-range-thumb:hover {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
 
 .slider__range-max:focus::-moz-range-thumb {
-  background-color: #c5bae8;
+  background-color: rgba(120, 89, 207, 0.25);
   outline: 2px solid #ffffff;
   outline-offset: -4px;
 }
